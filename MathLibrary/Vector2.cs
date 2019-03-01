@@ -34,7 +34,30 @@ namespace MathLibrary
             return scaled;
         }
 
-        public float Lenght() 
+        public Vector2 Normalized()
+        {
+            Vector2 normalized = new Vector2();
+            normalized.x = this.x / Length();
+            normalized.y = this.y / Length();
+
+            return normalized;
+        }
+
+        public Vector2 AddVector(ref Vector2 vector)
+        {
+            Vector2 vector2 = new Vector2();
+            vector2.x = x + vector.x;
+            vector2.y = y + vector.y;
+
+            return vector2;
+        }
+
+        public Vector2 SubtractVector(ref Vector2 vector)
+        {
+            return new Vector2(x - vector.x, y - vector.y);
+        }
+
+        public float Length() 
         {
             float lenght = (float)Math.Sqrt((x * x) + (y * y));
 
