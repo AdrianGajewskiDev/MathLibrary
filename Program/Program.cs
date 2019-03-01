@@ -17,8 +17,11 @@ namespace Program
 
             Vector2 vector = point - point2;
 
-            Console.WriteLine("Result: " + vector.x + ", " + vector.y);
-            
+            float length = vector.Lenght();
+
+          //  Console.WriteLine("Result: " + vector.x + ", " + vector.y);
+            Console.WriteLine("Result: " + length);
+
         }
     }
 }

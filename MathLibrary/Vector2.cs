@@ -15,6 +15,12 @@ namespace MathLibrary
         public float x;
         public float y;
 
+        public float Lenght() 
+        {
+            float lenght = (float)Math.Sqrt((x * x) + (y * y));
+
+            return (float)Math.Round(lenght, 2);
+        }
       
     }
 }
