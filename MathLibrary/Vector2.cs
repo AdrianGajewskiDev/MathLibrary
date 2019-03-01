@@ -10,7 +10,9 @@ namespace MathLibrary
             y = Y;
         }
 
-        private float x;
-        private float y;
+        public Vector2() {}
+
+        public float x;
+        public float y;
     }
 }
