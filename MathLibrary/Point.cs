@@ -26,5 +26,15 @@ namespace MathLibrary
 
             return p2;
         }
+
+
+        public static Vector2 operator -(Point lhs, Point rhs)
+        {
+            Vector2 vector = new Vector2();
+            vector.x = lhs.x - rhs.x;
+            vector.y = lhs.y - rhs.y;
+
+            return vector;
+        }
     }
 }

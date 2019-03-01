@@ -11,13 +11,14 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            Point point = new Point(1, 0);
+            Point point = new Point(0, -1);
 
-            Vector2 vector = new Vector2(2, 3);
+            Point point2 = new Point(1, 1);
 
-            Point point2 = point.AddVector(vector);
+            Vector2 vector = point - point2;
 
-            Console.WriteLine("Result: " + point2.x + ", " + point2.y);
+            Console.WriteLine("Result: " + vector.x + ", " + vector.y);
+            
         }
     }
 }
